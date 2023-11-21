@@ -4,6 +4,6 @@
     <string name="Username">Username atau Email</string>
     <string name="Password">Kata Sandi</string>
     <string name="Sandi">Lupa kata sandi?</string>
-    <string name="ButtonLogin">Masuk     ></string>
+    <string name="ButtonLogin">Masuk</string>
     <string name="Akun">Belum punya akun?</string>
 </resources>

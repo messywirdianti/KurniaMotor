@@ -19,7 +19,7 @@
             android:name=".DaftarLayananActivity"
             android:exported="false" />
         <activity
-            android:name=".PertamaActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -31,7 +31,7 @@
             android:name=".KonfirmasiPendaftaranActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PertamaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
