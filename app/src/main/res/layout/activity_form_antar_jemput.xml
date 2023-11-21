@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/page_antar_jemput___2"
+    tools:context=".FormAntarJemputActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form"
+        android:gravity="center"
+        android:text="Antar dan Jemput"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Nama Customer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="364dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/kotakisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/tv_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Nomor Telepon Customer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/edt_nohp"
+        android:layout_width="364dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/kotakisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nohp"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Alamat Pengantaran/Penjemputan"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nohp"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/edt_alamat"
+        android:layout_width="365dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/kotakisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alamat"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/tv_Layanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Jenis Layanan yang Dibutuhkan"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alamat"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/edt_layanan"
+        android:layout_width="364dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/kotakisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alamat"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/tv_merk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Merek Motor"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Layanan"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/edt_merk"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/kotakisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_merk"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/tv_tipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tipe Motor"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_merk"
+        tools:layout_editor_absoluteX="201dp" />
+
+    <EditText
+        android:id="@+id/edt_tipe"
+        android:layout_width="148dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/kotakisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipe"
+        tools:layout_editor_absoluteX="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
