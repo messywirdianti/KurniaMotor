@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/bg_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/bg_top2"
+                android:layout_width="411dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/recset" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rtitle"
+                android:fontFamily="@font/sbpoppins"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="PENGATURAN"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/phoprof"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="83dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/sbpoppins"
+                android:text="Mr. X"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="115dp"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:id="@+id/name_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="120dp"
+                android:fontFamily="@font/sbpoppins"
+                android:text="Mr.X@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_upprofile"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="Perbarui Profile"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rpoppins"
+            android:background="@drawable/r_setbutton"
+            android:drawableRight="@drawable/icon_next_dark"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_top" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="Tentang Kami"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rpoppins"
+            android:background="@drawable/r_setbutton"
+            android:drawableRight="@drawable/icon_next_dark"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_upprofile" />
+
+        <Button
+            android:id="@+id/btn_hub"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="Hubungi Kami"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rpoppins"
+            android:background="@drawable/r_setbutton"
+            android:drawableRight="@drawable/icon_next_dark"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_about" />
+
+        <Button
+            android:id="@+id/btn_keluar"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="Keluar"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sbpoppins"
+            android:background="@drawable/r_setbutton"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_hub" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

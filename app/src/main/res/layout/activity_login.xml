@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="220dp"
             android:scaleType="fitXY"
             android:src="@drawable/image_login">
         </ImageView>
@@ -71,7 +71,8 @@
                 android:fontFamily="@font/rpoppins"
                 android:textSize="16sp"
                 android:background="@drawable/radius_circle"
-                android:hint="Masukkan Username/Email anda" />
+                android:hint="Masukkan Username/Email anda"
+                android:inputType="textEmailAddress"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -87,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan Kata Sandi anda"
+                android:inputType="textPassword"
                 android:paddingStart="20dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
