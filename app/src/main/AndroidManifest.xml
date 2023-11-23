@@ -19,7 +19,16 @@
             android:name=".FormBookingActivity"
             android:exported="false" />
         <activity
-            android:name=".BookingActivity"
+            android:name=".PesanAntarJemput"
+            android:exported="false" />
+        <activity
+            android:name=".HubungiKami"
+            android:exported="false" />
+        <activity
+            android:name=".TentangKami"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfil"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
