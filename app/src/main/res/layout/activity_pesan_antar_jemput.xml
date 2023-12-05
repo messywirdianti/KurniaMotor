@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F18805"
     tools:context=".PesanAntarJemput">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,31 +14,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/center_bottom"
+                android:src="@drawable/bottom_left"
+                android:layout_marginTop="30dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="230dp"
                 android:scaleType="fitXY"
-                android:layout_gravity="center"/>
+                android:src="@drawable/bottom_right" />
         </FrameLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     <TextView
         android:id="@+id/tv_antarjemput"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:text="Antar dan Jemput"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24dp"
         android:fontFamily="@font/sbpoppins"
-        android:background="@drawable/rtitle"
+        android:background="@drawable/rtitle_orange"
         android:gravity="center"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +68,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:padding="3dp"
         android:paddingStart="20dp"
         android:layout_marginLeft="50dp"
@@ -94,7 +96,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:inputType="phone"
         android:padding="3dp"
         android:paddingStart="20dp"
@@ -123,7 +125,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:padding="3dp"
         android:paddingStart="20dp"
         android:layout_marginLeft="50dp"
@@ -151,7 +153,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:padding="3dp"
         android:paddingStart="20dp"
         android:layout_marginLeft="50dp"
@@ -179,7 +181,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:padding="3dp"
         android:paddingStart="20dp"
         android:layout_marginLeft="50dp"
@@ -202,9 +204,9 @@
 
     <EditText
         android:id="@+id/edt_tipeMotor"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:fontFamily="@font/rpoppins"
         android:paddingStart="20dp"
         android:padding="3dp"
@@ -234,7 +236,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:padding="3dp"
         android:paddingStart="20dp"
         android:layout_marginLeft="50dp"
@@ -257,9 +259,9 @@
 
     <EditText
         android:id="@+id/edt_jenisBahanBakar"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:fontFamily="@font/rpoppins"
         android:paddingStart="20dp"
         android:padding="3dp"
@@ -289,7 +291,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:inputType="date"
         android:padding="3dp"
         android:paddingStart="20dp"
@@ -313,9 +315,9 @@
 
     <EditText
         android:id="@+id/edt_waktuPesan"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/r_setbutton"
         android:fontFamily="@font/rpoppins"
         android:inputType="datetime"
         android:paddingStart="20dp"
@@ -330,9 +332,10 @@
         android:id="@+id/btn_ajukan"
         android:layout_width="140dp"
         android:layout_height="40dp"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/radius_circle"
         android:text="Ajukan Layanan"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="5dp"
         app:layout_constraintStart_toStartOf="@+id/edt_tanggalPesan"
@@ -340,11 +343,12 @@
 
     <Button
         android:id="@+id/btn_batal"
-        android:layout_width="140dp"
+        android:layout_width="130dp"
         android:layout_height="40dp"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/radius_circle"
         android:text="Batal"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="35dp"
         app:layout_constraintStart_toEndOf="@+id/btn_ajukan"

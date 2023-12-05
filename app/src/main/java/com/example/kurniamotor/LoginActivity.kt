@@ -10,9 +10,11 @@ import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 
 class LoginActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -26,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
         //Belum Punya Akun
-        val tv_account = findViewById<TextView>(R.id.tv_NhaveAccount)
+        val tv_account = findViewById<TextView>(R.id.tv_belumPunyaAkun)
         val text = "Belum punya akun?"
         val spanString = SpannableString(text)
 
