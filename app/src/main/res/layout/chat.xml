@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="411dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/recset"
+        android:layout_marginTop="-750dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/panahkembali"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profilchat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/profil"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profilchat3"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgchat"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profilchat2"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="256dp"
+        android:src="@drawable/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:text="Nama user"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@+id/profilchat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bgchat"
+        android:layout_width="371dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/bgpesan"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/isipesan"
+        android:layout_width="318dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="104dp"
+        android:text="Halo kak, saya ingin memesan layanan perawatan rutin untuk motor saya. Bagaimana cara melakukannya?"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/bgchatoren"
+        android:layout_width="371dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/bgpsanoren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/isipesanoren"
+        android:layout_width="306dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="228dp"
+        android:text="Hai! Anda bisa memesan layanan perawatan melalui aplikasi kami. Mohon berikan informasi tentang jenis layanan yang Anda butuhkan dan kapan Anda ingin membuat janji."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="163dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="177dp"
+        android:src="@drawable/bottom_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="135dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="248dp"
+        android:src="@drawable/buttomright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="340dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/bgtulispesan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="Ketik pesan"
+        android:textSize="20sp"
+        android:textColor="@color/abuabu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <ImageView
+        android:id="@+id/btnsend"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginBottom="40sp"
+        android:src="@drawable/send"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
