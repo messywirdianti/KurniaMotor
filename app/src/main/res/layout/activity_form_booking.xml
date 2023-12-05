@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_booking"
+    tools:context=".FormBookingActivity">
+
+    <TextView
+        android:id="@+id/formbooking"
+        android:layout_width="296dp"
+        android:layout_height="34dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/sbpoppins"
+        android:paddingStart="60dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="3dp"
+        android:text="Booking Online"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/phoprof"
+        android:layout_width="241dp"
+        android:layout_height="117dp"
+        android:src="@drawable/whatsapp_image_2023_11_19_at_11_41_21_03eb42f3"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formbooking"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sbpoppins"
+        android:text="Nama Customer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoprof"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="381dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/r_setbutton"
+        android:fontFamily="@font/rpoppins"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/noTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sbpoppins"
+        android:text="Nomor Telepon Customer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <EditText
+        android:id="@+id/edt_noTelp"
+        android:layout_width="381dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/r_setbutton"
+        android:fontFamily="@font/rpoppins"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noTelp" />
+
+    <TextView
+        android:id="@+id/merekMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sbpoppins"
+        android:text="Merek Motor"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_noTelp"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/edt_merekMotor"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/r_setbutton"
+        android:fontFamily="@font/rpoppins"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_TipeMotor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/merekMotor" />
+
+    <TextView
+        android:id="@+id/plat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sbpoppins"
+        android:text="Plat Kendaraan"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <EditText
+        android:id="@+id/edt_plat"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/r_setbutton"
+        android:fontFamily="@font/rpoppins"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plat" />
+
+    <TextView
+        android:id="@+id/layanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Permasalahn Motor"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_plat"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/edt_layanan"
+        android:layout_width="372dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/r_setbutton"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layanan" />
+
+    <TextView
+        android:id="@+id/tglPemesananMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sbpoppins"
+        android:text="Tanggal Pemesanan "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_layanan"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/edt_tglPemesanan"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/r_setbutton"
+        android:fontFamily="@font/rpoppins"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tglPemesananMotor" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="@font/sbpoppins"
+        android:text="Waktu Pemesanan"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_waktu"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/r_setbutton"
+        android:fontFamily="@font/rpoppins"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waktu" />
+
+    <Button
+        android:id="@+id/btn_batal"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:background="@drawable/navbarbg"
+        android:paddingLeft="4dp"
+        android:text="Batal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/btn_ajukan"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/navbarbg"
+        android:paddingLeft="4dp"
+        android:text="Ajukan Pengantrian"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
