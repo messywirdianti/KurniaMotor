@@ -13,6 +13,18 @@
         android:theme="@style/Theme.KurniaMotor"
         tools:targetApi="31">
         <activity
+            android:name=".PesanAntarJemput"
+            android:exported="false" />
+        <activity
+            android:name=".HubungiKami"
+            android:exported="false" />
+        <activity
+            android:name=".TentangKami"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfil"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
