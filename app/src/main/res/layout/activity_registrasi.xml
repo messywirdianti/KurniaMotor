@@ -5,34 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/page_daftar"
+    android:background="@drawable/page_login4"
     tools:context=".RegistrasiActivity">
 
     <TextView
         android:id="@+id/tv_Daftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DAFTAR"
-        android:textColor="@color/black"
-        android:textSize="30dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/sbpoppins"
-        android:layout_marginTop="50dp"
+        android:text="DAFTAR"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/TitleLogin"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Daftar" />
 
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Lengkap"
-        android:textSize="16sp"
-        android:textColor="@color/black"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="104dp"
         android:fontFamily="@font/sbpoppins"
-        android:layout_marginTop="64dp"
-        android:layout_marginLeft="50dp"
+        android:text="Nama Lengkap"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_Daftar"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_Daftar" />
 
     <EditText
         android:id="@+id/edt_name"
@@ -42,7 +55,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/rectangle_9"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:paddingStart="20dp"
@@ -72,7 +85,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/rectangle_9"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:paddingStart="20dp"
@@ -102,7 +115,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/rectangle_9"
         android:inputType="textEmailAddress"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -133,7 +146,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/rectangle_9"
         android:inputType="phone"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -165,7 +178,7 @@
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
         android:inputType="textPassword"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/rectangle_9"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:paddingStart="20dp"
@@ -195,7 +208,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:fontFamily="@font/rpoppins"
-        android:background="@drawable/circle_daftar"
+        android:background="@drawable/rectangle_9"
         android:inputType="textPassword"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -205,30 +218,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_konfSandi"/>
 
-    <Button
-        android:id="@+id/btn_masuk"
-        android:layout_width="124dp"
-        android:layout_height="40dp"
-        android:text="Masuk"
-        android:drawableRight="@drawable/icon_next_dark"
-        android:background="@drawable/circle_daftar"
-        android:layout_marginTop="32dp"
-        android:paddingLeft="4dp"
-        app:layout_constraintStart_toStartOf="@+id/edt_konfSandi"
-        app:layout_constraintTop_toBottomOf="@+id/edt_konfSandi" />
+<!--    <Button-->
+<!--        android:id="@+id/btn_masuk"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="Masuk"-->
+<!--        android:drawableRight="@drawable/icon_next_dark"-->
+<!--        android:background="@drawable/circle_daftar"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:paddingLeft="4dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/edt_konfSandi"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edt_konfSandi" />-->
 
     <Button
         android:id="@+id/btn_daftar"
         android:layout_width="124dp"
         android:layout_height="40dp"
-        android:text="Daftar"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_9"
         android:drawableRight="@drawable/icon_next_dark"
-        android:background="@drawable/circle_daftar"
-        android:layout_marginTop="32dp"
         android:paddingLeft="4dp"
+        android:text="Daftar"
         app:layout_constraintEnd_toEndOf="@+id/edt_konfSandi"
         app:layout_constraintTop_toBottomOf="@+id/edt_konfSandi" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
