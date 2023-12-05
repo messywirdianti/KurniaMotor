@@ -20,13 +20,12 @@
         android:background="@drawable/rectangle"
         android:fontFamily="@font/sbpoppins"
         android:paddingStart="60dp"
-        android:paddingTop="5dp"
+        android:paddingTop="3dp"
         android:paddingEnd="45dp"
         android:paddingBottom="3dp"
         android:text="Booking Online"
         android:textColor="@color/white"
         android:textSize="16sp" />
-
 
     <TextView
         android:id="@+id/name_profile"
@@ -109,13 +108,11 @@
         android:id="@+id/btn_booking"
         android:layout_width="242dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="90dp"
         android:layout_marginTop="365dp"
-        android:background="@drawable/r_setbutton"
+        android:background="@drawable/rectangle"
         android:fontFamily="@font/sbpoppins"
-        android:gravity="center"
-        android:paddingStart="20dp"
-        android:paddingLeft="4dp"
+        android:paddingLeft="7dp"
         android:text="Tambahkan Antrian"
         android:textAllCaps="false"
         android:textColor="#000000"

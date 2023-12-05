@@ -5,160 +5,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bakgroundlogin"
+    android:background="@drawable/page_login___3"
     tools:context=".LoginActivity">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/sbpoppins"
+        android:paddingStart="60dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="3dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/image_login">
-        </ImageView>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rpoppins"
+        android:text="Username atau Email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/booking"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/sbpoppins"
+        android:paddingStart="20dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="3dp"
+        android:hint="Ketik username/email anda"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.035" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="14dp" />
+    <TextView
+        android:id="@+id/sandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rpoppins"
+        android:text="Kata Sandi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp">
+    <EditText
+        android:id="@+id/edt_sandi"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/sbpoppins"
+        android:paddingStart="20dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="3dp"
+        android:hint="Ketik kata sandi anda"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandi"
+        app:layout_constraintVertical_bias="0.035" />
 
-            <TextView
-                android:layout_width="363dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/TitleLogin"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:fontFamily="@font/sbpoppins"/>
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/radius_circle"
+        android:drawableRight="@drawable/icon_next_dark"
+        android:fontFamily="@font/sbpoppins"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="12dp"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sandi" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/tv_NhaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="@font/rpoppins"
+        android:padding="5dp"
+        android:text="@string/Akun"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Username"
-                android:fontFamily="@font/sbpoppins"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:paddingStart="20dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:fontFamily="@font/rpoppins"
-                android:textSize="16sp"
-                android:background="@drawable/radius_circle"
-                android:hint="Masukkan Username/Email anda"
-                android:inputType="textEmailAddress"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Password"
-                android:textSize="15sp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/sbpoppins"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Masukkan Kata Sandi anda"
-                android:inputType="textPassword"
-                android:paddingStart="20dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:background="@drawable/radius_circle"
-                android:fontFamily="@font/rpoppins"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Sandi"
-                android:textSize="12dp"
-                android:fontFamily="@font/rpoppins"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="15dp"
-                android:textColor="@color/black"/>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="50dp" />
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btn_masuk"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:text="Masuk"
-                    android:fontFamily="@font/sbpoppins"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:background="@drawable/radius_circle"
-                    android:gravity="center_vertical"
-                    android:drawableRight="@drawable/icon_next_dark"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="12dp"
-                    android:layout_marginStart="170dp"
-                    android:layout_marginEnd="25dp"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tv_NhaveAccount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="@string/Akun"
-                android:fontFamily="@font/rpoppins"
-                android:textColor="@color/black"
-                android:textSize="12dp"
-                android:padding="5dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="42dp"/>
-
-        </FrameLayout>
-
-
-
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/lupasandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="@font/rpoppins"
+        android:text="@string/Sandi"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_NhaveAccount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
