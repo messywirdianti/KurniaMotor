@@ -226,28 +226,30 @@
 
             <Button
                 android:id="@+id/btn_daftar"
-                android:layout_width="130dp"
+                android:layout_width="170dp"
                 android:layout_height="36dp"
-                android:layout_marginRight="32dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/radius_circle"
                 android:text="Daftar"
                 android:textAllCaps="false"
-                android:drawableRight="@drawable/icon_next_dark"
+                android:fontFamily="@font/sbpoppins"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edt_konfKatasandi" />
-          
-            <Button
-                android:id="@+id/btn_masuk"
-                android:layout_width="115dp"
-                android:layout_height="36dp"
-                android:layout_marginRight="32dp"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/radius_circle"
-                android:text="Masuk"
+
+            <TextView
+                android:id="@+id/tv_sudahPunyaAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sudah punya akun? Masuk"
+                android:textColor="@color/black"
+                android:textColorLink="@color/orange"
                 android:textAllCaps="false"
-                android:drawableRight="@drawable/icon_next_dark"
+                android:fontFamily="@font/rpoppins"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_daftar" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

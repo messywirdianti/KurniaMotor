@@ -52,10 +52,16 @@ dependencies {
     //Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
 
-    //Navbar
+    //Bottom Navbar
     implementation ("com.etebarian:meow-bottom-navigation:1.2.0")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61")
 
     //Circle Image View
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    //Retrofit, Lifecycle runtime ktx
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.5.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 }

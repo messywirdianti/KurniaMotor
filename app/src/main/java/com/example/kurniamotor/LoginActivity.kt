@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
         }
         //Belum Punya Akun
         val tv_account = findViewById<TextView>(R.id.tv_belumPunyaAkun)
-        val text = "Belum punya akun?"
+        val text = "Belum punya akun? Daftar"
         val spanString = SpannableString(text)
 
         val accountText = object : ClickableSpan() {
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
                 finish()
             }
         }
-        spanString.setSpan(accountText,0, 17, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        spanString.setSpan(accountText,18, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         tv_account.text = spanString
         tv_account.movementMethod = LinkMovementMethod.getInstance()
     }
