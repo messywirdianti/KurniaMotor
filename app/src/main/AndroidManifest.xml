@@ -15,6 +15,12 @@
         android:theme="@style/Theme.KurniaMotor"
         tools:targetApi="31">
         <activity
+            android:name=".LihatstatusantarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatstatusbookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".StatusBookingActivity"
             android:exported="false" />
         <activity
