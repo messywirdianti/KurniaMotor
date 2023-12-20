@@ -31,13 +31,14 @@
              android:id="@+id/iv_profile"
              android:layout_width="60dp"
              android:layout_height="60dp"
+             android:layout_marginLeft="70dp"
              android:layout_marginTop="70dp"
              android:clickable="true"
              android:focusable="true"
              android:src="@drawable/profil"
-             android:layout_marginLeft="70dp"
              app:layout_constraintStart_toEndOf="@+id/textView9"
-             app:layout_constraintTop_toTopOf="parent" />
+             app:layout_constraintTop_toTopOf="parent"
+             tools:ignore="SpeakableTextPresentCheck" />
 
          <TextView
              android:id="@+id/textView9"
@@ -217,6 +218,7 @@
              tools:ignore="MissingConstraints" />
 
          <ImageView
+             android:id="@+id/lihatstatusantar"
              android:layout_width="111dp"
              android:layout_height="99dp"
              android:layout_marginTop="272dp"
