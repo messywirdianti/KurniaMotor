@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912258203610",
+    "project_id": "fir-auth-e8c3a",
+    "storage_bucket": "fir-auth-e8c3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912258203610:android:51ab34309f73528e310ae3",
+        "android_client_info": {
+          "package_name": "com.example.kurniamotor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdVRAWvU1b3MmmqcaKhnlYDVDp5IahBBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
