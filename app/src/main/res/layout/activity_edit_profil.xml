@@ -119,32 +119,34 @@
         android:id="@+id/edt_Nape"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:hint="Edit nama pengguna"
-        android:textSize="16sp"
-        android:fontFamily="@font/rpoppins"
-        android:drawableLeft="@drawable/ic_pencil"
-        android:background="@drawable/radius_circle"
         android:layout_marginTop="32dp"
+        android:background="@drawable/radius_circle"
+        android:drawableLeft="@drawable/ic_pencil"
+        android:fontFamily="@font/rpoppins"
         android:gravity="center"
+        android:hint="Edit nama pengguna"
         android:paddingLeft="12dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_line" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_line"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btn_simpan"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/radius_circle"
         android:fontFamily="@font/sbpoppins"
+        android:gravity="center"
         android:text="Simpan"
         android:textAllCaps="false"
         android:textSize="16sp"
-        android:background="@drawable/radius_circle"
-        android:gravity="center"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_Nape" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_Nape"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/iv_desain1"

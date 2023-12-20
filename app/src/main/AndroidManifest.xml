@@ -18,6 +18,12 @@
             android:name=".LupaKataSandiActivity"
             android:exported="false" />
         <activity
+            android:name=".LihatstatusantarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatstatusbookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".StatusBookingActivity"
             android:exported="false" />
         <activity
