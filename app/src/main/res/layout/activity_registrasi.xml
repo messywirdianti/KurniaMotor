@@ -225,7 +225,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_konfKataSandi" />
 
             <Button
-                android:id="@+id/btn_daftar"
+                android:id="@+id/btnDaftar"
                 android:layout_width="170dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="32dp"
@@ -250,7 +250,7 @@
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_daftar" />
+                app:layout_constraintTop_toBottomOf="@+id/btnDaftar" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
